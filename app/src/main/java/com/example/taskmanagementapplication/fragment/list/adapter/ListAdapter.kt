@@ -12,10 +12,11 @@ class ListAdapter : RecyclerView.Adapter<ListAdapter.ListViewHolder>() {
     var dataList = emptyList<ToDoData>()
 
     class ListViewHolder(private val binding: RowLayoutBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(toDoData: ToDoData) {
-            binding.toDoData = toDoData
+        fun bind(toDoData: ToDoData ) {
+            binding.toDoData=toDoData
             binding.executePendingBindings()
         }
+
 
         companion object {
             fun from(parent: ViewGroup): ListViewHolder {

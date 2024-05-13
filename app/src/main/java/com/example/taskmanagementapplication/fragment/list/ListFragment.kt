@@ -19,10 +19,7 @@ import com.example.taskmanagementapplication.fragment.list.adapter.ListAdapter
 import com.example.taskmanagementapplication.utils.hideKeyboard
 import com.example.taskmanagementapplication.utils.observeOnce
 import com.google.android.material.snackbar.Snackbar
-//import jp.wasabeef.recyclerview.animators.SlideInUpAnimator
-
-
-
+import jp.wasabeef.recyclerview.animators.SlideInUpAnimator
 import kotlinx.coroutines.*
 
 class ListFragment : Fragment(), SearchView.OnQueryTextListener {

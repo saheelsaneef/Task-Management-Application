@@ -9,7 +9,6 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.taskmanagementapplication.R
-import com.example.taskmanagementapplication.data.models.Priority
 import com.example.taskmanagementapplication.data.models.ToDoData
 import com.example.taskmanagementapplication.data.viewmodel.ToDoViewModel
 import com.example.taskmanagementapplication.databinding.FragmentUpdateBinding
@@ -17,7 +16,6 @@ import com.example.taskmanagementapplication.fragment.SharedViewModel
 
 class UpdateFragment : Fragment() {
     private var _binding: FragmentUpdateBinding? = null
-
     private val binding get() = _binding!!
 
     private val mSharedViewModel: SharedViewModel by viewModels()
@@ -28,7 +26,6 @@ class UpdateFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        // Inflate the layout for this fragment
         _binding = FragmentUpdateBinding.inflate(inflater, container, false)
         binding.args = args
         binding.currentPrioritiesSpinner.onItemSelectedListener = mSharedViewModel.listener
