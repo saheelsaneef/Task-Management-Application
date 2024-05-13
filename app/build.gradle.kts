@@ -36,6 +36,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures {
+        dataBinding = true
+    }
 }
 
 dependencies {
@@ -78,7 +82,8 @@ dependencies {
     api ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
 
     // RecyclerView Animator
-    implementation("jp.wannabee:recyclerview-animators:3.0.0")
+    implementation ("jp.wannabee:recyclerview-animators:3.0.0")
+
 
     // Data Binding
     kapt("com.android.data-binding:compiler:4.1.0")

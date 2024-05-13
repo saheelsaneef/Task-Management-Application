@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.taskmanagementapplication.data.models.ToDoData
-import com.example.todoapp.databinding.RowLayoutBinding
+import com.example.taskmanagementapplication.databinding.RowLayoutBinding
 
 class ListAdapter : RecyclerView.Adapter<ListAdapter.ListViewHolder>() {
 

@@ -13,12 +13,11 @@ import com.example.taskmanagementapplication.data.models.Priority
 import com.example.taskmanagementapplication.data.models.ToDoData
 import com.example.taskmanagementapplication.data.viewmodel.ToDoViewModel
 import com.example.taskmanagementapplication.databinding.FragmentUpdateBinding
-import com.example.todoapp.databinding.FragmentUpdateBinding
 import com.example.taskmanagementapplication.fragment.SharedViewModel
 
 class UpdateFragment : Fragment() {
     private var _binding: FragmentUpdateBinding? = null
-    // This property is only valid between onCreateView and onDestroyView.
+
     private val binding get() = _binding!!
 
     private val mSharedViewModel: SharedViewModel by viewModels()
